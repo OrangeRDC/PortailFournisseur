@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="radio.css" />
+    <script src="script.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Portail Fournisseurs ORDC</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title=""
+        ></div>
+        <div class="progress-step" data-title="O"></div>
+        <div class="progress-step" data-title="R"></div>
+        <div class="progress-step" data-title="A"></div>
+        <div class="progress-step" data-title="N"></div>
+        <div class="progress-step" data-title="G"></div>
+        <div class="progress-step" data-title="E"></div>
+        
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Personne morale</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Individu</span>
+        </label>
+          <label for="nomso">Nom de la société</label>
+          <input type="text" name="nomso" id="nomso" />
+        </div>
+        <div class="input-group">
+          <label for="nomgroup">Nom du groupe</label>
+          <input type="text" name="nomgroup" id="nomgroup" />
+        </div>
+        <div class="input-group">
+          <label for="autrenom">Autre nom de la société</label>
+          <input type="text" name="nautrenom" id="autrenom" />
+        </div>
+        <div class="input-group">
+          <label for="adresse">Adresse</label>
+          <input type="text" name="adresse" id="adresse" />
+        </div>
+        <div class="input-group">
+          <label for="telephone">telephone</label>
+          <input type="text" name="telephone" id="telephone" />
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="input-group">
+          <label for="paysconst">Pays de constitution</label>
+          <input type="text" name="paysconst" id="paysconst" />
+        </div>
+        <div class="input-group">
+          <label for="datconst">Date de constitution de la société</label>
+          <input type="date" name="datconst" id="datconst" />
+        </div>
+        <div class="input-group">
+          <label for="TVA">Numero TVA</label>
+          <input type="TEXT" name="TVA" id="TVA" />
+        </div>
+        <div class="input-group">
+          <label for="activite">Activité de la société</label>
+          <input type="text" name="activite" id="activite" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h3>Avez-vous detenue par une société mere ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+        </label>
+          <label for="somere">Nom de la société mere</label>
+          <input type="text" name="somere" id="somere" />
+        </div>
+        <div class="input-group">
+          <label for="nompro">Nom du propriétaire ultime</label>
+          <input type="text" name="nompro" id="nompro" />
+        </div>
+        <div class="input-group">
+          <label for="nompro">Noms des partenaire et  % des parts</label>
+          <textarea class="input-group" name="" rows="3" placeholder="Joel MALUMBA : 30% "></textarea>
+        </div>
+        <h3>La société mere est-elle cotée en bourse ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, merci de detailler"></textarea>
+        </label>
+        <h3>Avez-vous des relations avec un gouvernement ou un Etat?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, quelle est la nature de cette relation"></textarea>
+        </label>
+        <h3>Etes vous une entreprise</h3>
+        <label>
+          <input type="radio" id="html" name="radio" />
+          <span>Publique</span>
+      </label>
+      <label>
+          <input type="radio" id="css" name="radio" checked/>
+          <span>Etat</span>
+      </label>
+      <h3>Un gouvernement ou un Etat a t-il des parts dans votre société?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, quel est le % ?"></textarea>
+        </label>
+        <h3>Des personnes politiquement exposées sont-elles impliquées dans la transaction ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, fournir le nom et la fonction
+           "></textarea>
+        </label>
+        <h3>Filiales ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, merci de preciser
+           "></textarea>
+        </label>
+        <h3>Joint-Venture(s) ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            
+        </label>
+        <h3>Des tierces personnes sont-elles capables d'exercer un controle significatif ou de vous influencer par le biais d'arrangement
+          financiers ou de relations?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, fournir les details et les preuves appropriées
+           "></textarea>
+        </label>
+      <br>
+        
+          
+          
+       
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h4>Informations relatives a la personne impliquée dans la transaction/partenariat actuel</h4>
+        </div>
+        <div class="input-group">
+          <label for="nom_part">Nom</label>
+          <input type="text" name="nom_part" id="nom_part" />
+        </div>
+        <div class="input-group">
+          <label for="fonction_part">Fonction</label>
+          <input type="text" name="fonction_part" id="fonction_part" />
+        </div>
+        <div class="input-group">
+          <label for="telephone_part">Telephone</label>
+          <input type="text" name="telephone_part" id="telephone_part" />
+        </div>
+        <div class="input-group">
+          <label for="email_part">Email</label>
+          <input type="email" name="email_part" id="email_part" />
+        </div>
+        <h3>Des employés ou anciens employés des sociétés du groupe Orange sont-elles Impliquées dans la transaction actuelle?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, indiquer le nom et la fonction
+           "></textarea>
+        </label>
+        <h3>Des citoyens états-uniens sont-ils impliqués dans la transaction actuelle ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, indiquer le nom et la fonction
+           "></textarea>
+        </label>
+        <h3>il y a-t-il une personne impliquée dans la transaction qui puisse etre dans une situation de conflit d'interet
+          individuellemnt ou en tant que membre d'un groupe ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, indiquer le nom et la fonction et la raison du conflit
+           "></textarea>
+        </label>
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h3>CONTENTIEUX</h3>
+          <label for="nombaque">Nom de la banque</label>
+          <input type="text" name="nombaque" id="nombaque" />
+        </div>
+        <div class="input-group">
+          <label for="adressebanque">Adresse de la banque</label>
+          <input type="text" name="adressebanque" id="adressebanque" />
+        </div>
+        <div class="input-group">
+          <label for="nomfiliale">Nom de la filiale locale de la banque</label>
+          <input type="text" name="nomfiliale" id="nomfiliale" />
+        </div>
+        <div class="input-group">
+          <label for="adressefiliale">Adresse de la filiale locale de la banque</label>
+          <input type="text" name="adressefiliale" id="adressefiliale" />
+        </div>
+       
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h3>Quelle est le principale banque avec laquelle vous traitez dans le cadre de la transaction actuelle?</h3>
+          <label for="nombaque">Nom de la banque</label>
+          <input type="text" name="nombaque" id="nombaque" />
+        </div>
+        <div class="input-group">
+          <label for="adressebanque">Adresse de la banque</label>
+          <input type="text" name="adressebanque" id="adressebanque" />
+        </div>
+        <div class="input-group">
+          <label for="nomfiliale">Nom de la filiale locale de la banque</label>
+          <input type="text" name="nomfiliale" id="nomfiliale" />
+        </div>
+        <div class="input-group">
+          <label for="adressefiliale">Adresse de la filiale locale de la banque</label>
+          <input type="text" name="adressefiliale" id="adressefiliale" />
+        </div>
+       
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h4>Pays soumis a un programme de sanction économique</h4>
+        </div>
+        <div class="input-group">
+          <label for="nom_part">Sur les 5 dernieres années, votre société a-t-elle été directement ou indirectement 
+            de quelques manieres que ces soit dans des transaction avec des personnes ou des entités originaires des pays suivant
+            ou dans les pays suivants?
+          </label>
+        <br>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Cuba</span>
+            <span>Iran</span>
+            <span>Corée du Nord</span>
+            <span>Soudan</span>
+            <span>Syrie</span>
+            <span>Myanmar</span>
+            <span>Russie</span>
+            <span>Aucun</span>
+        </label>
+        <label for="adressefiliale">Dans le cadre de la transaction actuelle, des agents, des fournisseurs, des sous-traitants 
+          ou des partenaires sont-ils impliqués? si oui, merci de mentionner les noms
+        </label>
+          <input type="text" name="adressefiliale" id="adressefiliale" />
+          <br>
+          <label for="nom_part">Si la reponse a la question precedente est oui, merci de repondre aux questions suivantes :
+          </label>
+          <label for="nom_part">Des transactions en dollars ont-elles été effectuées avec des pays sous sanction?
+          </label>
+        <br>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>OUI</span>
+            <span>NON</span>
+            
+        </label>
+        <br>
+        <label for="nom_part">Si ces transactions concernent des produits, sont-ils composés de 10  % ?
+        </label>
+      <br>
+      <label>
+          <input type="radio" id="css" name="radio" checked/>
+          <span>OUI</span>
+          <span>NON</span>
+          
+      </label>
+        </div>
+        
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h4>ETHIQUE ET COMPLIANCE</h4>
+          <br>
+          <h3>Avez-vous un Directeur de la conformité(Chief Compliance Officer) dans votre société</h3>
+        
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, le nom et les coordonnées
+           "></textarea>
+        </label>
+        <h3>Votre société a-t-elle definie un programme d'ethique et de compliance ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            
+        </label>
+        <h3>Votre société a-t-elle definie un programme d'ethique et de compliance ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si OUI, quelle gourvernance du programme d'ethique est mise en place ?
+           "></textarea>
+           <h3>Votre programme d'ethique et compliance couvre-t-il en particulier les domaines suivants ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Corruption</span>
+            <span>Cadeau et hospitalité</span>
+            <span>Fraude</span>
+            <span>Conflits d'interet</span>
+            <span>Sanctions économiques</span>
+
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Autre</span>
+            
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Merci de preciser ?
+        "></textarea>
+        <h3>Avez-vous une charte de déontologie en vigueur dans votre société ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si Oui,merci de preciser ?
+        "></textarea>
+        <h3>Avez-vous un mecanisme d'alerte pour relater les allégations des corruption ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si Oui,merci de preciser ?
+        "></textarea>
+        <h3>Mesurez-vous l'efficacité de votre programme d'ethique et compliance ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si Oui,merci de preciser ?
+        "></textarea>
+        <h3>Votre société a-t-elle développée des sessions de formation et sensibilisation a votre programme d'ethique ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si Oui,merci de preciser ?
+        "></textarea>
+        <h3>Votre société a-t-elle formalisée un processus de Due Diligence envers ses parties prenantes ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <textarea class="input-group" name="" rows="3" placeholder="Si Oui,merci de preciser ?
+        "></textarea>
+        <h3>Une clause stantard de compliance est-elle mentionnée dans vos contrats ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+        <h3>Demandez-vous a vos sous-traitants d'inclure une clause de compliance dans les contrats conclus 
+          avec chacun des agents, fournisseurs, sous-traitants ou partenaires avec lesquels ils travaillent ?</h3>
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+            <span>Non</span>
+
+        </label>
+       
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">SOUMETTRE</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <h4>CONTENTIEUX</h4>
+          <br>
+          <h3>Faites-vous l'objet d'un quelconque litige ou d'une decision judiciaire/sentence arbitrale qui reste exécutoire ?</h3>
+        
+          <label>
+            <input type="radio" id="html" name="radio" />
+            <span>Oui</span>
+        </label>
+        <label>
+            <input type="radio" id="css" name="radio" checked/>
+            <span>Non</span>
+            <br>
+            <textarea class="input-group" name="" rows="3" placeholder="Si OUI, merci de preciser
+           "></textarea>
+        </label>
+        
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Precedent</a>
+          <a href="#" class="btn btn-next">Suivant</a>
+        </div>
+      </div>
+    </div>
+      
+      
+     
+      <div class="form-step">
+        <div class="input-group">
+          <div class="input-group">
+            <label for="adressebanque">Nom</label>
+            <input type="text" name="adressebanque" id="adressebanque" />
+          </div>
+          <div class="input-group">
+            <label for="adressebanque">Fonction</label>
+            <input type="text" name="adressebanque" id="adressebanque" />
+          </div>
+          <div class="input-group">
+            <label for="adressebanque">Date</label>
+            <input type="date" name="adressebanque" id="adressebanque" />
+          </div>
+          <div class="input-group">
+            <label for="adressebanque">Signature</label>
+            <input type="text" name="adressebanque" id="adressebanque" />
+          </div>
+          
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          
+         <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
